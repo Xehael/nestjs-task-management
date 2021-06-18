@@ -1,3 +1,5 @@
+import { TaskStatus } from "./task-status.enum";
+
 export interface Task {
     id: string;
     title: string;
@@ -6,8 +8,3 @@ export interface Task {
     priority: number;
 }
 
-export enum TaskStatus {
-    OPEN = 'OPEN',
-    IN_PROGRESS = 'IN_PROGRESS',
-    DONE = 'DONE'
-}
